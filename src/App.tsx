@@ -13,6 +13,9 @@ let hobbies: string[];
 // array of one number and one string
 let role: [number, string];
 
+// function type, receives string and returns number
+let printName: (name: string) => number;
+
 // define object
 type Person = {
   name: string;
