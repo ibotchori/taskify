@@ -12,6 +12,16 @@ let hobbies: string[]
 let role: [number, string]
 
 
+// define object
+type Person = {
+  name: string,
+  age: number
+}
+
+let person: Person = {
+  name: "John",
+  age: 2
+}
 
 function App() {
   return (
