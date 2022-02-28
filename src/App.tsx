@@ -15,10 +15,12 @@ type Person = {
   name: string;
   age?: number;
 };
-
 let person: Person = {
   name: "John",
 };
+
+// Array of Person Object
+let lotsOfPeople: Person[];
 
 function App() {
   return <div className="App">Hello world</div>;
