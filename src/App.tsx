@@ -28,6 +28,11 @@ let person: Person = {
 // Array of Person Object
 let lotsOfPeople: Person[];
 
+// any type, not recommended
+let job: any;
+// unknown type
+let personName: unknown;
+
 function App() {
   return <div className="App">Hello world</div>;
 }
