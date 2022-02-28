@@ -3,7 +3,10 @@ import React from "react";
 // Basic Types in Typescript
 
 let name: String;
-let age: number;
+// Union Type
+let age: number | string;
+age = "test";
+
 let isStudent: boolean;
 // array of string
 let hobbies: string[];
