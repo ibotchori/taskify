@@ -9,11 +9,16 @@ const App: React.FC = () => {
   // Array type of state, imported from model
   const [todos, setTodos] = useState<Todo[]>([]);
 
-  const handleAdd = (e: React.FormEvent<EventTarget>) => {
+  const handleAdd = (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (todo) {
+      setTodos([...todos, { id: Date.now(), todo, isDone: false }]);
+      setTodo("");
+    }
   };
 
-  console.log(todo);
+  console.log(todos);
   return (
     <div className="App">
       <span className="heading">Taskify</span>
