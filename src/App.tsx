@@ -1,15 +1,23 @@
 import React, { useState } from "react";
 import "./App.css";
 import InputField from "./components/InputField";
+import { Todo } from "./model";
 const App: React.FC = () => {
   // State with type string
   const [todo, setTodo] = useState<string>("");
+
+  // Array type of state, imported from model
+  const [todos, setTodos] = useState<Todo[]>([]);
+
+  const handleAdd = (e: React.FormEvent<EventTarget>) => {
+    e.preventDefault();
+  };
 
   console.log(todo);
   return (
     <div className="App">
       <span className="heading">Taskify</span>
-      <InputField todo={todo} setTodo={setTodo} />
+      <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
     </div>
   );
 };
