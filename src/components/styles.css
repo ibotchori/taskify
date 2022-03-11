@@ -44,7 +44,7 @@
   box-shadow: 0 0 5px black;
 }
 
-/* .container {
+.container {
   width: 95%;
   display: flex;
   margin-top: 10px;
@@ -75,7 +75,7 @@
 
 .todos__heading {
   font-size: 30px;
-  // text-align: center; 
+  /*  text-align: center; */
   color: white;
 }
 
@@ -132,4 +132,4 @@
     width: 95%;
     margin-bottom: 10px;
   }
-} */
+}
