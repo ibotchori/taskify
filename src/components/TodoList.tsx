@@ -9,7 +9,7 @@ interface props {
 
 const TodoList: React.FC<props> = ({ todos, setTodos }) => {
   return (
-    <div className="container">
+    <div className="todos">
       {todos.map((todo) => (
         <SingleTodo
           key={todo.id}
